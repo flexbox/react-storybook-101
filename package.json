@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "storybook-chromatic": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,7 +15,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "CHROMATIC_APP_CODE=ts42b8n1qes chromatic test"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",
@@ -23,7 +26,6 @@
     "@storybook/react": "^3.4.8",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "react-redux": "^5.0.7",
     "react-test-renderer": "^16.4.1"
   }
 }
